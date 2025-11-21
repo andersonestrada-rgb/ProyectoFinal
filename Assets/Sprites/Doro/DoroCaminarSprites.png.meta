@@ -1,0 +1,403 @@
+fileFormatVersion: 2
+guid: e155d3ba67dc3824d8257efe12417d50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8781632434482944847
+    second: DoroCaminarSprites_0
+  - first:
+      213: -8393332393607904505
+    second: DoroCaminarSprites_1
+  - first:
+      213: -8337287191265888359
+    second: DoroCaminarSprites_2
+  - first:
+      213: -5339830891282465775
+    second: DoroCaminarSprites_3
+  - first:
+      213: -6383119935540140687
+    second: DoroCaminarSprites_4
+  - first:
+      213: 5713171624676584222
+    second: DoroCaminarSprites_5
+  - first:
+      213: 7864789497870727835
+    second: DoroCaminarSprites_6
+  - first:
+      213: -4886945809916884756
+    second: DoroCaminarSprites_7
+  - first:
+      213: -1425444651360945595
+    second: DoroCaminarSprites_8
+  - first:
+      213: -7882956090129246443
+    second: DoroCaminarSprites_9
+  - first:
+      213: -688362800265412778
+    second: DoroCaminarSprites_10
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoroCaminarSprites_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b976d0c20aed970800000000000000
+      internalID: 8781632434482944847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_1
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 703c83568a4e48b80800000000000000
+      internalID: -8393332393607904505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2
+        width: 109
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997be2ee8710c4c80800000000000000
+      internalID: -8337287191265888359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_3
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1
+        width: 108
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c7374981c15e5b0800000000000000
+      internalID: -5339830891282465775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_4
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 3
+        width: 107
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1756a63ec3a9a67a0800000000000000
+      internalID: -6383119935540140687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_5
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 3
+        width: 107
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b60bda253494f40800000000000000
+      internalID: 5713171624676584222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_6
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 3
+        width: 106
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9abecdf068552d60800000000000000
+      internalID: 7864789497870727835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_7
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 3
+        width: 106
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce802539da41e2cb0800000000000000
+      internalID: -4886945809916884756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_8
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 3
+        width: 108
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a76a454adc73ce0800000000000000
+      internalID: -1425444651360945595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 2
+        width: 109
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51718d3a33d1a9290800000000000000
+      internalID: -7882956090129246443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoroCaminarSprites_10
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 2
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f36952ea17276f0800000000000000
+      internalID: -688362800265412778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DoroCaminarSprites_0: 8781632434482944847
+      DoroCaminarSprites_1: -8393332393607904505
+      DoroCaminarSprites_10: -688362800265412778
+      DoroCaminarSprites_2: -8337287191265888359
+      DoroCaminarSprites_3: -5339830891282465775
+      DoroCaminarSprites_4: -6383119935540140687
+      DoroCaminarSprites_5: 5713171624676584222
+      DoroCaminarSprites_6: 7864789497870727835
+      DoroCaminarSprites_7: -4886945809916884756
+      DoroCaminarSprites_8: -1425444651360945595
+      DoroCaminarSprites_9: -7882956090129246443
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
