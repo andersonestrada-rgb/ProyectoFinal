@@ -44,5 +44,5 @@ public class ControlPersonaje : MonoBehaviour
         bullet.transform.up = normalizeShootDirection;
 
         print(worldPositon);
-    }
+    }    
 }
