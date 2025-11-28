@@ -1,5 +1,12 @@
 using UnityEngine;
 
+/*Contenido
+Uso del método Transform para obtener las coordenadas del personaje
+Asignación de velocidad al enemigo
+Uso de Vector2 para obtener el valor vectorial de la distancia enemy - player. La homogenenizamos
+Hacer que el enemigo recorra el vector resultante
+*/
+
 public class EnemyFollow : MonoBehaviour
 {
     public Transform player;   // Referencia del Player

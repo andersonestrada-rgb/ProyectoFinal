@@ -2,10 +2,11 @@
 using UnityEngine;
 
 /* Contenido
+Control de Spawn
 Creación de enemigos alrededor del jugador
-Asignación de vida
-Uso de cortina para intervalos y evitar colapsar el juego
-
+Asignación de vida del enemigo
+Uso de cortina para intervalos a modo de prevención de saturación
+Condiciones de comparación por colisión por Trigger (Destrucción por vida)
 */
 
 public class EnemyController : MonoBehaviour

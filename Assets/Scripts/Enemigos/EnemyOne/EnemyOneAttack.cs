@@ -1,16 +1,21 @@
 using System.Collections;
 using UnityEngine;
 
+/*Contenido
+Cortinas para intervalos en ataques enemigos
+Creación de objetos de disparo
+*/
+
 public class EnemyOneAttack : MonoBehaviour
 {
     public GameObject BulletPrefabEnemy;
     public Transform Player;
     [SerializeField] private float intervalo = 1f;
-    private bool attacking = false;
+    private bool attacking = false; //Control de bucle, caso contrario las balas no se moverán
 
     void Update()
     {
-        if (!attacking)
+        if (!attacking) 
         {
             StartCoroutine(CoroutineAttack());
         }
@@ -20,8 +25,8 @@ public class EnemyOneAttack : MonoBehaviour
     {
         attacking = true;
 
-        Vector2 direction = (Vector2)Player.position - (Vector2)transform.position; // 1. Calcular dirección hacia el jugador (Vector2)        
-        direction = direction.normalized;                                           // 2. Normalizar la dirección
+        Vector2 direction = (Vector2)Player.position - (Vector2)transform.position; //Calcular dirección hacia el jugador (Vector2)        
+        direction = direction.normalized;                                           //Normalizar la dirección
 
         GameObject bullet = Instantiate(BulletPrefabEnemy);                         //-> Crear bala
         bullet.transform.position = transform.position;                             //Coloca la bala en la posición del enemigo

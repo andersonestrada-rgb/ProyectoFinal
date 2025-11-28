@@ -7,6 +7,10 @@ TagManager:
   - Enemy
   - BulletEnemyOne
   - ShotPlayer
+  - EnemyTwo
+  - EnemyThree
+  - BulletEnemyTwo
+  - BulletEnemyThree
   layers:
   - Default
   - TransparentFX

@@ -1,25 +1,54 @@
 using UnityEngine;
-
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
+/*Contenido
+Control de movimento (tipo MOBA)
+Creación de disparo y acción de disparo
+Vida del player
+*/
 public class ControlPersonaje : MonoBehaviour
 {
     public GameObject BulletPrefab;
-    public float Speed;
-  
+    [SerializeField] private float Speed;
+    public float lifePlayer = 50f;
+    private bool move = false; //Simula un swichs de cambio para no hacer un movimiento constante al dar click
+    private Vector2 destiny;
+
     void Update()
     {
+        //Disparo
         if (Input.GetMouseButtonDown(1))
             ShootProyectile();
 
+        //Controles de movimiento
+        if (move) //Si es TRUE hay movimiento 
+            MoveToDirection(); 
+
         if (Input.GetMouseButton(0))
-            MoveToDirection();
+            SetDestiny();                
+    }
+    /*
+    public Vector2 PointFollow() //Método para obtener las coordenadas del mouse
+    {
+        Vector2 goTo = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        move = true;
+
+        return goTo;
+    }
+    */
+
+    public void SetDestiny() //Método para obtener las coordenadas del mouse
+    {
+        destiny = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        move = true; 
     }
 
     public void MoveToDirection()
-    {
-        Vector2 worldPositon = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 moveDirection = (worldPositon - (Vector2)transform.position).normalized;
-
+    {      
+        Vector3 moveDirection = (destiny - (Vector2)transform.position).normalized; 
         transform.position += moveDirection * Speed * Time.deltaTime;
+
+        if (Vector2.Distance(transform.position, destiny) <= 0f)
+            move = false;
     }
 
     public void ShootProyectile()
@@ -33,4 +62,8 @@ public class ControlPersonaje : MonoBehaviour
         bullet.transform.up = normalizeShootDirection;             //Ajusta el ángulo de la bala a la ubicación del mouse
         print(worldPositon);                                       //Imprime la ubicación del mouse al dar click
     }
+
+
+
+
 }
