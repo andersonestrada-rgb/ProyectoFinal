@@ -204,5 +204,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08a10ed89a2ff642b29d8c31d85b940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   playerController: {fileID: 4660038505446705998, guid: 990309967f3758944bfe94633826026a, type: 3}
   deathEnemy: {fileID: 2170162157530634405, guid: 321b5c0bc663ec14a9f0cab450b20cd4, type: 3}
+=======
+  playerController: {fileID: 222192968069498872, guid: 990309967f3758944bfe94633826026a, type: 3}
+>>>>>>> 2ad36e6d3c0241c613b1b30f6aac2e22fc7b65ff

@@ -7,12 +7,14 @@ Hacer uso del script para hacer explotar al enenigo al colisionar con el player
 
 public class EnemyTwoAttack : MonoBehaviour
 {
-    [SerializeField] private PlayerController playerController;
+    [SerializeField] private PlayerController playerController; //Referencia al script PlayerController para acceder al método de vida
     [SerializeField] private GameObject deathEnemy;
+
 
     public void OnCollisionEnter2D(Collision2D collision)
     {   
         if (collision.gameObject.CompareTag("Player")) //Comparar colisión para realizar la detonación del enemigo y causar daño
+
         {
             GameObject death = Instantiate(deathEnemy);
             death.transform.position = gameObject.transform.position;

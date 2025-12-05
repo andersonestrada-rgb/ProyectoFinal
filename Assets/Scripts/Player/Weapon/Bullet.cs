@@ -12,8 +12,8 @@ public class Bullet : MonoBehaviour
     private Transform targetEnemy;
     [SerializeField] private float Speed;
     [SerializeField] float minDistance = 2f; // rango para detectar enemigos    
-    private List<string> tagslist = new List<string>()
-    {     "Enemy", "EnemyTwo", "BulletEnemyOne" };
+    private string[] tagslist = new string[]
+    {     "Enemy", "EnemyTwo", "Boss", "BulletEnemyOne" };
     void Start()
     {     
         Destroy(gameObject, 5);
@@ -42,13 +42,10 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        //if (collision.CompareTag("Enemy")     || collision.CompareTag("EnemyTwo") ||
-        //    collision.CompareTag("MuroNegro"))
-        //    Destroy(gameObject);
     }
     public void EnemyNearby()
     {        
-        Transform nearest = null; //un método del GameObject vacío エネミー
+        Transform nearest = null; //un método del GameObject vacío, se le asignará al objeto más cercano エネミー
 
         foreach (string tag in tagslist)
         {

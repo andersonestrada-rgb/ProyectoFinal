@@ -14,8 +14,8 @@ public class EnemyController : MonoBehaviour
 {    
     [SerializeField] private GameObject SpawnPrefabEnemy;
     [SerializeField] private GameObject Player;
-    [SerializeField] private float radioSpawn = 5f; 
-    [SerializeField] private float espera = 3f;    
+    [SerializeField] private float radioSpawn = 5f;
+    [SerializeField] private const float espera = 3f;  
     private bool spawnActivate = false;
     private Coroutine currentSpawnRoutine; //Cortina de refetencia
 
@@ -31,7 +31,6 @@ public class EnemyController : MonoBehaviour
                     currentSpawnRoutine = StartCoroutine(CortinaDeSpawneo()); //Hacemos uso de la referencia (ahora no está vacia)
                     print("Spawner Activado");
                     break;
-
                 case false:                    
                     if (currentSpawnRoutine != null)           // Detiene usando la referencia 
                     {

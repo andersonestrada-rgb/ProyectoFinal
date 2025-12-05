@@ -1,5 +1,4 @@
 using UnityEngine;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 /*Contenido
 Control de movimento (tipo MOBA)
 Creación de disparo y acción de disparo
@@ -74,4 +73,8 @@ Vida del player
         }
     }
 
+    public float GetLifePlayer()
+    {
+        return lifePlayer;
+    }
 }
