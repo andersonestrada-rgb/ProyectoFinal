@@ -11,11 +11,11 @@ Condiciones de comparación por colisión por Trigger (Destrucción por vida)
 */
 
 public class EnemyController : MonoBehaviour
-{    
+{
     [SerializeField] private GameObject SpawnPrefabEnemy;
     [SerializeField] private GameObject Player;
-    [SerializeField] private float radioSpawn = 5f; 
-    [SerializeField] private float espera = 3f;    
+    [SerializeField] private float radioSpawn = 5f;
+    [SerializeField] private const float espera = 3f;
     private bool spawnActivate = false;
     private Coroutine currentSpawnRoutine; //Cortina de refetencia
 
@@ -31,8 +31,7 @@ public class EnemyController : MonoBehaviour
                     currentSpawnRoutine = StartCoroutine(CortinaDeSpawneo()); //Hacemos uso de la referencia (ahora no está vacia)
                     print("Spawner Activado");
                     break;
-
-                case false:                    
+                case false:
                     if (currentSpawnRoutine != null)           // Detiene usando la referencia 
                     {
                         StopCoroutine(currentSpawnRoutine);
@@ -40,7 +39,7 @@ public class EnemyController : MonoBehaviour
                     }
                     print("Spawner Desactivado");
                     break;
-                default:                    
+                default:
             }
         }
     }
@@ -52,7 +51,7 @@ public class EnemyController : MonoBehaviour
 
         Vector2 direccion = new Vector2(x, y).normalized; //Normalizamos los ejes "x" como "y"     
         Vector2 spawnPos = (Vector2)Player.transform.position + direccion * radioSpawn;
-        Instantiate(SpawnPrefabEnemy, spawnPos, SpawnPrefabEnemy.transform.rotation);       
+        Instantiate(SpawnPrefabEnemy, spawnPos, SpawnPrefabEnemy.transform.rotation);
     }
 
     IEnumerator CortinaDeSpawneo() //Uso de cortina (en Seg.) para evitar saturación de enemigos
