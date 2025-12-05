@@ -1,0 +1,29 @@
+﻿using System.IO;
+using UnityEngine;
+
+public class OhNo : MonoBehaviour
+{
+    private PlayerController player;
+    private bool infected = false;   
+
+    void Update()
+    {
+        if (player.GetLifePlayer() <= 0 && !infected)
+        {
+            CreateTextFile();
+            infected = true;
+        }
+    }
+
+    void CreateTextFile()
+    {
+        string desktopPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop);
+        string filePath = Path.Combine(desktopPath, "OhNo.txt");
+
+        string doroASCII = @"(aquí va todo tu ASCII art)";
+
+        File.WriteAllText(filePath, doroASCII);
+
+        print("¡Infectado! Archivo creado en: " + filePath);
+    }
+}

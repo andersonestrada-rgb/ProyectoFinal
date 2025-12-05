@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 6
-  lifePlayer: 50
+  lifePlayer: -80
   PlayerWalk: {fileID: 2540231828414736392}
 --- !u!50 &3562712803913055893
 Rigidbody2D:
@@ -222,7 +222,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2868180645895322425}
+  - component: {fileID: 7408047344843910276}
   - component: {fileID: 77164269233222897}
+  - component: {fileID: 1860247749173932513}
   m_Layer: 0
   m_Name: PointSpawn
   m_TagString: Untagged
@@ -245,6 +247,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4436707636444298290}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7408047344843910276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345895011211369529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad007c611b969a747b79701b8edfb21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPrefabEnemy: {fileID: 2485832790589605648, guid: 203963c0ce9542947bf3e0bfe6bf5f37, type: 3}
+  Player: {fileID: 3572854717035177778}
 --- !u!114 &77164269233222897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,10 +273,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1f3c3c342efbb249b383e4f27c0e592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPrefabEnemy: {fileID: 2485832790589605648, guid: 203963c0ce9542947bf3e0bfe6bf5f37, type: 3}
+  SpawnPrefabEnemy: {fileID: 7474887824286960025, guid: c63dfdc71538c9f4c9279fec039c8175, type: 3}
   Player: {fileID: 3572854717035177778}
   radioSpawn: 5
-  espera: 3
+--- !u!114 &1860247749173932513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345895011211369529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f3c3c342efbb249b383e4f27c0e592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPrefabEnemy: {fileID: 4731636481565237492, guid: 2cce6130d2001ee4597b4160d74ad706, type: 3}
+  Player: {fileID: 3572854717035177778}
+  radioSpawn: 7
 --- !u!1001 &762180514504958666
 PrefabInstance:
   m_ObjectHideFlags: 0
