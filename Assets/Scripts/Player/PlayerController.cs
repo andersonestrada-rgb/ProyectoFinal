@@ -73,5 +73,8 @@ Vida del player
             print("¡Tu universo ha sido invadido!");
         }
     }
-
+    public float GetLifePlayer()
+    {
+        return lifePlayer;
+    }
 }

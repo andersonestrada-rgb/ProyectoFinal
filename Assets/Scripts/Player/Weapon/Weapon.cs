@@ -7,14 +7,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Transform weaponLeft;
             [SerializeField] private Transform FirePointLeft;
     [SerializeField] private Transform weaponRight;
-            [SerializeField] private Transform FirePointRight;
-
-    private GameObject Player;
-
-    void Start()
-    {
-        Player = GameObject.FindGameObjectWithTag("Player");
-    }
+            [SerializeField] private Transform FirePointRight;    
 
     void Update()
     {
