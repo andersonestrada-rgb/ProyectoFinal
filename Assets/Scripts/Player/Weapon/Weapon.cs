@@ -7,7 +7,14 @@ public class Weapon : MonoBehaviour
     [SerializeField] private Transform weaponLeft;
             [SerializeField] private Transform FirePointLeft;
     [SerializeField] private Transform weaponRight;
-            [SerializeField] private Transform FirePointRight;  
+            [SerializeField] private Transform FirePointRight;
+
+    private GameObject Player;
+
+    void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     void Update()
     {
@@ -39,11 +46,11 @@ public class Weapon : MonoBehaviour
         Vector2 normalizeShootDirection = shootDirection.normalized;            //normalizando la direccion
          
         GameObject bulletLeft = Instantiate(BulletPrefab);                          //-> Crear 
-        bulletLeft.transform.position = (Vector2)FirePointLeft.position;         //Coloca la bala en la posición del objeto vacio que representa el punto de disparo
+        bulletLeft.transform.position = (Vector2)FirePointLeft.position;         //Coloca la bala en la posición del player
         bulletLeft.transform.up = normalizeShootDirection;                        //Ajusta el ángulo de la bala a la ubicación del mouse
        
         GameObject bulletRight = Instantiate(BulletPrefab);                         //-> Crear 
-        bulletRight.transform.position = (Vector2)FirePointRight.position;       //Coloca la bala en la posición del objeto vacio que representa el punto de disparo
+        bulletRight.transform.position = (Vector2)FirePointRight.position;       //Coloca la bala en la posición del player
         bulletRight.transform.up = normalizeShootDirection;                       //Ajusta el ángulo de la bala a la ubicación del mouse        
     }
 

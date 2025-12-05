@@ -189,12 +189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 576dbae65f4d530489ab27979f8b4ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  lifeEnemy: 4
-=======
   Enemy: {fileID: 7474887824286960025}
->>>>>>> 2ad36e6d3c0241c613b1b30f6aac2e22fc7b65ff
   speed: 1
+  lifeEnemy: 4
 --- !u!114 &3957333584394542669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,9 +204,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 785caf095547ba440820003bbb81c278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  BulletPrefabEnemy: {fileID: 715568517385076784, guid: ca5d0c66952fdef45b7429f01d3239fe, type: 3}
-=======
   BulletPrefabEnemy: {fileID: 5043139937888268952, guid: 0ea82e697dabb4e4aab24387b258ce78, type: 3}
->>>>>>> 2ad36e6d3c0241c613b1b30f6aac2e22fc7b65ff
   intervalo: 3

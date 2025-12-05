@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Enemy
+  - BulletEnemyOne
+  - ShotPlayer
+  - EnemyTwo
+  - EnemyThree
+  - BulletEnemyTwo
+  - BulletEnemyThree
+  - MuroNegro
+  - Boss
   layers:
   - Default
   - TransparentFX
